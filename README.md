@@ -13,5 +13,5 @@ Both syntax and location have changed. However, they can be quite easily modifie
     - ".program.protocol", ".program.tool", ".program.params.verbose", ".program.params.quiet" and ".program.extra_params". 
     - The "extra_params" value of "-Pcom4" defines COM4 as the port that the Arduino Uno is connected to. 
     - The "-F" options can be removed because it is used to ignore an invalid signature. 
-- The content of the "platform.txt" file is a copy of the bottom section of the same file in the Arduino installation (in Programs Files (x86) on Windows). 
+- The content of the "platform.txt" file is a copy of the bottom section of the file with the same name in the Arduino installation folder (in "Programs Files (x86)" on Windows). 
 - The "boards.txt" can be empty but must exist. I put a "#" comment file as github doesn't accept empty files. 
