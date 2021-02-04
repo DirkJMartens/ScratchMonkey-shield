@@ -4,11 +4,11 @@ HVPP shield for Arduino Uno using ScratchMonkey hardware and software
 The original "programmers.txt" file provided is not compatible with the newer versions of the Arduino IDE. 
 Both syntax and location have changed. However, they can be quite easily modified to make them compatible. 
 1. Location: 
-------------
-Inside your sketch folder, create a folder called "hardware" (if you have installed boards using the Board Manager, the folder may already exist). 
-Create a folder inside it called "ScratchMonkey" and inside that create another folder called "avr". Copy the 3 files into this "avr" folder. 
+- Inside your sketch folder, create a folder called "hardware" 
+- If you have installed boards using the Board Manager, the folder may already exist. 
+- Create a folder inside it called "ScratchMonkey" and inside that create another folder called "avr". 
+- Copy the 3 files into this "avr" folder. 
 2. Syntax: 
-----------
 - Changes to "programmers.txt" include the addition of 
     ".program.protocol", ".program.tool", ".program.params.verbose", ".program.params.quiet" and ".program.extra_params". 
     The "extra_params" value of "-Pcom4" defines COM4 as the port that the Arduino Uno is connected to. 
