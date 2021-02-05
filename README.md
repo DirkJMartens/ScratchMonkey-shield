@@ -30,7 +30,7 @@ Both syntax and location have changed. However, they can be quite easily modifie
 4. Shield Hardware: 
 - Further, ensure you are using the right connection diagram depending on whether you want to program using ISP, HVSP or HVPP. 
 - The target AVR chip you use will change the wiring. Kindly refer to the documentation of Scratchmonkey for details. 
-- The ISP-method can use a standard "Arduino as ISP" shield as it uses only the standard 6 ICSP connections (MISO/MOSI/SCK/SS/Vcc/GND). (Although the LED status will not be correct since wiring and pinout is different). 
-- The shield I created is the "HVPP" version (see pic). It is implemented on a perfboard shield using wire-wrapping and ZIF-socket. 
-- In the bottom-right hand corner are is connection header for +12V, +5V and GND. 
+- The ISP-method can use a standard "Arduino as ISP" shield as it uses only the standard 6 ICSP connections (MISO/MOSI/SCK/SS/Vcc/GND). (Although the LED status will not be correct since wiring and pinout is different). To use the ScratchMonkey shield as an ISP programmer, open the ScratchMonkey sketch in the Arduino Uno, select "Arduino Uno" under "Tools - Board" and select the appropriate COM port. Then use "Upload" to load the ScratchMonkey sketch into your Arduino Uno board. Next load the sketch you want to upload into your target chip into the Arduino IDE (e.g. Blink). Install/wire up your target chip and in the Arduino IDE, select the appropriate target under "Tools - Board" (e.g. ATMega328 on breadboard) and select "ScratchMonkey" under "Tools - Programmer". Then use "Upload using Programmer" (NOT "Upload") to load the Blink sketch into the target. If you use "Upload" instead of "Upload using Programmer" you will overwrite the ScratchMonkey sketch in the Arduino Uno programmer instead of loading the Blink sketch into the target chip. 
+- The shield I created is the "HVPP" version (see pic). It is implemented on an Arduino Uno protoboard shield using wire-wrapping and ZIF-socket. 
+- In the bottom-right hand corner is the connection header for +12V, +5V and GND. 
 - For the HVPP-shield, no status lights are available so the stock version of "avrdude" works. 
