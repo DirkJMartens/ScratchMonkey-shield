@@ -33,3 +33,4 @@ Both syntax and location have changed. However, they can be quite easily modifie
 - The ISP-method can use a standard "Arduino as ISP" shield as it uses only the standard 6 ICSP connections (MISO/MOSI/SCK/SS/Vcc/GND). (Although the LED status will not be correct since wiring and pinout is different). 
 - The shield I created is the "HVPP" version (see pic). It is implemented on a perfboard shield using wire-wrapping and ZIF-socket. 
 - In the bottom-right hand corner are is connection header for +12V, +5V and GND. 
+- For the HVPP-shield, no status lights are available so the stock version of "avrdude" works. 
