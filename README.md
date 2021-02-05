@@ -15,3 +15,9 @@ Both syntax and location have changed. However, they can be quite easily modifie
     - The "-F" options can be removed because it is used to ignore an invalid signature. 
 - The content of the "platform.txt" file is a copy of the bottom section of the file with the same name in the Arduino installation folder (in "Programs Files (x86)" on Windows). 
 - The "boards.txt" can be empty but must exist. I put a "#" comment file as github doesn't accept empty files. 
+
+After dropping these 3 files into the "avr" folder, restarting the Arduino IDE should show 6 new programmers. 
+When used in combination with the stock-version of "avrdude", only the last 3 ("STK500 mode") are usable. 
+If you recompile the "avrdude" source code modified with the patch, the first 3 should also work. 
+Ensure you are using the right connection diagram: ISP versus HV-serial versus HV-parallel uses different wiring between programmer and target. 
+And only the patched version will have the LEDs working. 
