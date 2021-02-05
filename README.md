@@ -22,6 +22,9 @@ Both syntax and location have changed. However, they can be quite easily modifie
 - When used in combination with the stock-version of "avrdude", only the last 3 ("STK500 mode") are usable. 
 - If you recompile the "avrdude" source code modified with the patch, the first 3 should also work (have not tested/tried myself). 
 - Regardless of "avrdude" version used, the connections/wiring between the Uno-programmer and target-chip will be different. 
-- Further, ensure you are using the right connection diagram depending on whether you want to program using ISP, HVSP or HVSP. 
+- Further, ensure you are using the right connection diagram depending on whether you want to program using ISP, HVSP or HVPP. 
 - Also the target AVR chip you use will change the wiring. Kindly refer to the documentation of Scratchmonkey for details. 
 - And only the patched version of "avrdude" will have the LEDs working. 
+- The ISP-method can use a standard "Arduino as ISP" shield as it uses only the standard 6 ICSP connections (MISO/MOSI/SCK/SS/Vcc/GND). 
+- The shield I created is the "HVPP" version (see pic). It is implemented on a perfboard shield using wire-wrapping and ZIF-socket. 
+- In the bottom-right hand corner are the connections for +12V, +5V and GND. 
