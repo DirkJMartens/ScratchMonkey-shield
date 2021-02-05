@@ -1,14 +1,29 @@
 scratchmonkey.name=ScratchMonkey
 scratchmonkey.communication=serial
 scratchmonkey.protocol=scratchmonkey
+scratchmonkey.program.protocol=scratchmonkey
+scratchmonkey.program.tool=avrdude
+scratchmonkey_stk500v2.program.params.quiet=-q
+scratchmonkey_stk500v2.program.params.verbose=-v
+scratchmonkey.program.extra_params=-P{serial.port}
 
 scratchmonkey_hvsp.name=ScratchMonkey HVSP
 scratchmonkey_hvsp.communication=serial
 scratchmonkey_hvsp.protocol=scratchmonkey_hvsp
+scratchmonkey_hvsp.program.protocol=scratchmonkey_hvsp
+scratchmonkey_hvsp.program.tool=avrdude
+scratchmonkey_stk500v2.program.params.quiet=-q
+scratchmonkey_stk500v2.program.params.verbose=-v
+scratchmonkey_hvsp.program.extra_params=-P{serial.port}
 
 scratchmonkey_hvpp.name=ScratchMonkey HVPP
 scratchmonkey_hvpp.communication=serial
 scratchmonkey_hvpp.protocol=scratchmonkey_pp
+scratchmonkey_hvpp.program.protocol=scratchmonkey_pp
+scratchmonkey_hvpp.program.tool=avrdude
+scratchmonkey_stk500v2.program.params.quiet=-q
+scratchmonkey_stk500v2.program.params.verbose=-v
+scratchmonkey_hvpp.program.extra_params=-P{serial.port}
 
 scratchmonkey_stk500v2.name=ScratchMonkey (STK500 Mode)
 scratchmonkey_stk500v2.communication=serial
@@ -17,13 +32,22 @@ scratchmonkey_stk500v2.program.protocol=stk500v2
 scratchmonkey_stk500v2.program.tool=avrdude
 scratchmonkey_stk500v2.program.params.quiet=-q
 scratchmonkey_stk500v2.program.params.verbose=-v
-scratchmonkey_stk500v2.program.extra_params=-Pcom4 -F
+scratchmonkey_stk500v2.program.extra_params=-P{serial.port}
 
 scratchmonkey_stk500v2_hvsp.name=ScratchMonkey HVSP (STK500 Mode)
 scratchmonkey_stk500v2_hvsp.communication=serial
 scratchmonkey_stk500v2_hvsp.protocol=stk500hvsp
+scratchmonkey_stk500v2_hvsp.program.protocol=stk500hvsp
+scratchmonkey_stk500v2_hvsp.program.tool=avrdude
+scratchmonkey_stk500v2.program.params.quiet=-q
+scratchmonkey_stk500v2.program.params.verbose=-v
+scratchmonkey_stk500v2_hvsp.program.extra_params=-P{serial.port}
 
 scratchmonkey_stk500v2_hvpp.name=ScratchMonkey HVPP (STK500 Mode)
 scratchmonkey_stk500v2_hvpp.communication=serial
 scratchmonkey_stk500v2_hvpp.protocol=stk500pp
-
+scratchmonkey_stk500v2_hvpp.program.protocol=stk500pp
+scratchmonkey_stk500v2_hvpp.program.tool=avrdude
+scratchmonkey_stk500v2.program.params.quiet=-q
+scratchmonkey_stk500v2.program.params.verbose=-v
+scratchmonkey_stk500v2_hvpp.program.extra_params=-P{serial.port}
