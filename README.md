@@ -5,6 +5,7 @@ Based on the work of Matthias Neeracher. Details on https://github.com/microther
 
 The original "programmers.txt" file provided is not compatible with the newer versions of the Arduino IDE. 
 Both syntax and location have changed. However, they can be quite easily modified to make them compatible. 
+(Refer to the "Issues" section of Matthias' github for some details). 
 
 1. Location of Arduino IDE config files: 
 - Inside your sketch folder, create a folder called "hardware" 
